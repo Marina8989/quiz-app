@@ -22,3 +22,60 @@
     margin-right: auto;
     margin-left: auto;
 }
+
+.button {
+    padding: 1rem 3.8rem;
+    text-transform: uppercase;
+    border: none;
+    transition: 0.3s all ease;
+    outline: 0;
+    opacity: 0.9;
+    font-weight: bold;
+    border: 1px solid #eee;
+}
+
+.button:hover {
+    opacity: 1;
+    background: var(--light-black);
+    color: white;
+}
+
+.button.button--bordered {
+    border: 1px solid var(--light-black);
+}
+
+.jabquiz {
+    padding: 2rem 1.4rem;
+}
+
+.jabquiz__question-box {
+    text-align: center;
+}
+
+.jabquiz__question {
+    font-family: var(--font-heading-stack);
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    padding: 0.8rem 4rem;
+    color: var(--main-font-color);
+}
+
+.jabquiz__tracker {
+    font-family: var(--font-body-stack);
+    color: var(--light-black);
+    padding: 1rem;
+}
+
+.progeress {
+    border-radius: 4px;
+    margin: 2rem auto;
+    width: 50%;
+    background: var(--light-white);
+}
+
+.progress__inner {
+    height: 10px;
+    width: 0%;
+    background: var(--main-theme-color);
+    border-right: 2px solid black;
+}
