@@ -4,23 +4,23 @@ export default function Quiz(questions) {
     this.currentIndex = 0;
 }
 
-Quiz.prototype.getCurrentQuestion = function() {
-    return this.questions[this.currentIndex];
-}
+// Quiz.prototype.getCurrentQuestion = function() {
+//     return this.questions[this.currentIndex];
+// }
 
-Quiz.prototype.nextIndex = function() {
-    this.currentIndex++;
-}
+// Quiz.prototype.nextIndex = function() {
+//     this.currentIndex++;
+// }
 
-Quiz.prototype.hasEnded = function() {
-    return this.currentIndex === this.questions.length;
-}
+// Quiz.prototype.hasEnded = function() {
+//     return this.currentIndex === this.questions.length;
+// }
 
-Quiz.prototype.quess = function(userGuess) {
-    const currentQuestion = this.question[this.currentIndex];
-    if (currectQuestion.isCorrect(userGuess)) {
-        this.score++;
-    }
+// Quiz.prototype.quess = function(userGuess) {
+//     const currentQuestion = this.question[this.currentIndex];
+//     if (currectQuestion.isCorrect(userGuess)) {
+//         this.score++;
+//     }
 
-    this.nextIndex();
-}
+//     this.nextIndex();
+// }
