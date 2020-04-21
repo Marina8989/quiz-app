@@ -13,23 +13,23 @@ const App = (() => {
     const restartButtonEl = document.querySelector(".restart");
 
     const q1 = new Question(
-        "First President of US?", ["Barrack", "Osama", "George", "Monkey"],
+        "What year was the very first model of the iPhone released?", ["1997", "2004", "2007", "2012"],
         2
     )
     const q2 = new Question(
-        "When was Javascript created?", ["June 1995", "May 1995", "July 1885", "Sep 1996"],
+        "What is often seen as the smallest unit of the memory?", ["gigabyte", "kilobyte", "megabyte", "bytebyte"],
         1
     )
     const q3 = new Question(
-        "What does CSS stand for?", ["County Sheriff Service", "Cascading sexy sheets", "cascading style sheets"],
+        "Who discovered penicilin?", ["Tesla", "Einstein", "Fleming", "Newton"],
         2
     )
     const q4 = new Question(
-        "The full form of HTML is...", ["Hyper Text Markup Language", "Hold The Mic", "ERROR"],
+        "What part of the atom has no electric charge", ["Neutron", "Proton", "Electron"],
         0
     )
     const q5 = new Question(
-        "console.log(typeof []) would return what?", ["Array", "Object", "null", "array"],
+        "Which planet has the most gravity?", ["Earth", "Jupiter", "Mars", "Venus"],
         1
     )
 
