@@ -4,6 +4,6 @@ export default function Question(question, choices, answerKey) {
     this.answerKey = answerKey;
 }
 
-Question.prototype.isCorrect = function(quessKey) {
-    return quessKey = this.answerKey;
+Question.prototype.isCorrect = function(guessKey) {
+    return guessKey === this.answerKey;
 }
