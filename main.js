@@ -1,28 +1,14 @@
 import Question from "./Question.js";
 import Quiz from "./Quiz.js";
 
-const App = (function() {
-    let counter = 0;
-
-    const doubleCounter = () => {
-        counter *= 2;
-    }
-
-    const incrementCounter = () => {
-        counter++;
-    }
-    const getCounter = () => {
-        return counter;
-    }
-    const setCounter = (newNum) => {
-        counter = newNum;
-    }
-    return {
-        get: getCounter,
-        set: setCounter
-    }
+const App = (() => {
+    //cache the DOM
+    const quizEl = document.querySelector('.jabquiz');
+    const quizQuestionEl = document.querySelector('.jabquiz__question');
+    const trackerEl = document.querySelector('.jabquiz__tracker');
+    const tagLineEl = document.querySelector('.jabquiz__tagline');
+    const choicesEl = document.querySelector('.jabquiz__choices');
+    const progressInnerEl = document.querySelector('.porgress__iner');
+    const nextButtonEl = document.querySelector('.next');
+    const restartButtonEl = document.querySelector('.restart');
 })();
-
-console.log(App.get());
-App.set(2);
-console.log(App.get());
