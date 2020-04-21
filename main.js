@@ -1,10 +1,28 @@
 import Question from "./Question.js";
 import Quiz from "./Quiz.js";
 
-const q1 = new Question();
-const q2 = new Question();
-const q3 = new Question();
+const App = (function() {
+    let counter = 0;
 
-const qArray = [q1, q2, q3];
-const myQuiz = new Quiz(qArray);
-console.log(myQuiz);
+    const doubleCounter = () => {
+        counter *= 2;
+    }
+
+    const incrementCounter = () => {
+        counter++;
+    }
+    const getCounter = () => {
+        return counter;
+    }
+    const setCounter = (newNum) => {
+        counter = newNum;
+    }
+    return {
+        get: getCounter,
+        set: setCounter
+    }
+})();
+
+console.log(App.get());
+App.set(2);
+console.log(App.get());
